@@ -16,7 +16,7 @@ class SeconddemoPipeline(object):
             id = re.findall('http://724.169pp.net/169mm/(.*?).jpg', this_url)[0]
             id = id.replace('/', '_')
             # print(id)
-            file = 'D:/WorkSpace/python_ws/python-large-web-crawler/xiyangmeinv/' + id + '.jpg'
+            file = 'D:/python/' + id + '.jpg'
             print('Downloading :' , file)
             urllib.request.urlretrieve(this_url, filename=file)
             print('Final Download :' , file)
